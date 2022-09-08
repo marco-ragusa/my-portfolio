@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  padding: 30px 30px 50px;
+  /* background-color: white; */
+  border: 2px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px); 
+} 
+.container *{
+  font-family: "Poppins",sans-serif;
+  color: black;
+  font-weight: 500;
+}
+h4{
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+}
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+.details{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+  border: 2px solid #1976d2;
+  border-radius: 20px;
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #1976d2;
+}
+
+@keyframes react-fill{
+  100%{
+      width: 65%;
+  }
+}
+#react-bar{
+  animation: react-fill 2s forwards;
+}
+
+@keyframes angular-fill{
+  100%{
+      width: 30%;
+  }
+}
+#angular-bar{
+  animation: angular-fill 2s forwards;
+}
+
+@keyframes python-fill{
+  100%{
+      width: 90%;
+  }
+}
+#python-bar{
+  animation: python-fill 2s forwards;
+}
+
+@keyframes restAPI-fill{
+  100%{
+      width: 80%;
+  }
+}
+#restAPI-bar{
+  animation: restAPI-fill 2s forwards;
+}
+
+@keyframes kube-fill{
+  100%{
+      width: 90%;
+  }
+}
+#kube-bar{
+  animation: kube-fill 2s forwards;
+}
+
+@keyframes linux-fill{
+  100%{
+      width: 95%;
+  }
+}
+#linux-bar{
+  animation: linux-fill 2s forwards;
+}
+
+@keyframes regex-fill{
+  100%{
+      width: 100%;
+  }
+}
+#regex-bar{
+  animation: regex-fill 2s forwards;
+}
